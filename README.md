@@ -16,7 +16,7 @@ https://github.com/SogelolaAyanfe/testable-profile-card
 
 1. Create a folder on your PC
 2. Open that folder in your text editor(e.g VS Code, Atom etc)
-3. 3. In your terminal, run the command to clone the repository::
+3. In your terminal, run the command to clone the repository::
    
    `git clone https://github.com/SogelolaAyanfe/testable-profile-card.git`
 4.  Save the project with " Ctrl + S "
