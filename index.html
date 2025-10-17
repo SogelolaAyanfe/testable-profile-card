@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Component</title>
+  </head>
+  <body>
+    <article data-testid="test-profile-card" class="profile-card">
+      <div class="top-section">
+        <figure class="avatar">
+          <img
+            src="https://media.licdn.com/dms/image/v2/D4D03AQF6seGDNJ7viQ/profile-displayphoto-shrink_200_200/B4DZWbCI8GHkAY-/0/1742062787562?e=2147483647&v=beta&t=jiQ7dHDfotumlV_VCN3NJsORv96XXSX9YfSnZNB3BV8"
+            alt="User Avatar"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+        <div class="top-subsection">
+          <header data-testid="test-user-name">Sogelola Ayanfeoluwa</header>
+          <p data-testid="test-user-bio">
+            Frontend developer passionate about creating accessible and
+            performant web experiences. Currently interning at HNG to improve
+            development capabilities.
+          </p>
+          <div class="time" data-testid="test-user-time"></div>
+        </div>
+      </div>
+      <div class="middle-section">
+        <nav
+          class="social-links"
+          aria-label="Social media links"
+          data-testid="test-user-social-links"
+        >
+          <ul class="social-list">
+            <li>
+              <a
+                href="https://github.com/SogelolaAyanfe"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+              >
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ayanfeoluwa-sogelola-gmnse-70980b248/"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+              >
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="bottom-section">
+        <section class="skills-section">
+          <h3>Hobbies</h3>
+          <ul class="hobbies-list" data-testid="test-user-hobbies">
+            <li class="hobbies-item">Basketball</li>
+            <li class="hobbies-item">Call of Duty</li>
+            <li class="hobbies-item">Art</li>
+            <li class="hobbies-ite">Listening to music</li>
+          </ul>
+        </section>
+        <section class="dislikes-section">
+          <h3>Dislikes</h3>
+          <ul class="dislikes-list" data-testid="test-user-dislikes">
+            <li class="dislike-item">Poor documentation</li>
+            <li class="dislike-item">Lack of accessibility</li>
+            <li class="dislike-item">Noise</li>
+            <li class="dislike-item">Cockroaches</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </body>
+</html>

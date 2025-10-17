@@ -1,0 +1,222 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  min-height: 100vh;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 900px;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.avatar img {
+  border-radius: 5px;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-subsection {
+  text-align: left;
+  padding-top: 20px;
+  padding-right: 40px;
+}
+
+.top-subsection p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+header {
+  font-size: 24px;
+  font-weight: bold;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.time {
+  display: flex;
+  color: black;
+  font-size: medium;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 2px 5px 2px 5px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  margin-bottom: 20px;
+  color: red;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.middle-section {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3px 8px 3px 8px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 200px;
+  white-space: normal;
+}
+
+.social-link:focus {
+  outline: 3px solid blue;
+}
+
+.social-link:hover {
+  background: #333;
+  border-color: #333;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 800px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.bottom-section ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.bottom-section li {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+section {
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 4px solid black;
+  max-width: 300px;
+  width: 100%;
+}
+
+@media screen and (max-width: 875px) {
+  section {
+    padding: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 828px) {
+  section {
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-section {
+    flex-direction: column;
+  }
+
+  .top-subsection {
+    padding-right: 0px;
+    padding-top: 10px;
+    text-align: center;
+    max-width: 600px;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  .middle-section {
+    justify-content: center;
+  }
+
+  .social-list {
+    padding-left: 0;
+  }
+
+  .bottom-section {
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 0;
+    padding-right: 30px;
+  }
+
+  section {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .middle-section {
+    display: flex;
+  }
+
+  .social-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
