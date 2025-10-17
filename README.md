@@ -20,4 +20,4 @@ https://github.com/SogelolaAyanfe/testable-profile-card
    
    `git clone https://github.com/SogelolaAyanfe/testable-profile-card.git`
 4.  Save the project with " Ctrl + S "
-5.  Navigate to the folder on your Pc and double-click on the index.html file
+5.  Navigate to the folder on your PC and double-click on the index.html file
