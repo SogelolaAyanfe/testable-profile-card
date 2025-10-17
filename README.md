@@ -1,20 +1,23 @@
-# My Simple Component
+# My Profile Card Component
 
-A simple Testable profile component built with HTML,CSS and vanilla JavaScript.
+A testable profile component built with HTML,CSS and vanilla JavaScript.
 
-## 🌐 Live Demo
-👉 [View Live Site](https://yourprojectname.netlify.app/)
+## Live URL
+https://testable-profilecard.netlify.app
 
-## 💻 GitHub Repository
-👉 [View on GitHub](https://github.com/yourusername/my-simple-component)
+## GitHub Repository
+https://github.com/SogelolaAyanfe/testable-profile-card
 
-## 🧠 Features
-- Responsive design
-- Clean and minimal code
-- Built using vanilla HTML, CSS, JS
+## Features
+- Responsive design on mobile, tablets and desktops.
+- Built using vanilla HTML, CSS, JavaScript only.
 
-## ⚙️ How to Run Locally
+##  To run this project Locally, follow the steps below:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/my-simple-component.git
+1. Create a folder on your PC
+2. Open that folder in your text editor(e.g VS Code, Atom etc)
+3. 3. In your terminal, run the command to clone the repository::
+   
+   `git clone https://github.com/SogelolaAyanfe/testable-profile-card.git`
+4.  Save the project with " Ctrl + S "
+5.  Navigate to the folder on your Pc and double-click on the index.html file
