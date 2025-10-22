@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <nav class="nav-container">
+      <ul data-testid="test-user-navbar" class="nav-list">
+        <li class="nav-list-item"><a href="index.html">Home</a></li>
+        <li class="nav-list-item"><a href="about.html">About Me</a></li>
+      </ul>
+    </nav>
+
+    <div id="contact-page" class="contact-page-container">
+      <div class="contact-container">
+        <h1>Contact Me</h1>
+        <p>
+          Have a question or want to work together? Fill out the form below!
+        </p>
+
+        <div
+          class="success-message"
+          data-testid="test-contact-success"
+          id="successMessage"
+        >
+          Thank you for your message! I will get back to you soon.
+        </div>
+
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name :</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              data-testid="test-contact-name"
+              aria-describedby="name-error"
+              required
+            />
+            <div
+              class="error-message"
+              id="name-error"
+              data-testid="test-contact-error-name"
+            ></div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email :</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              data-testid="test-contact-email"
+              aria-describedby="email-error"
+              required
+            />
+            <div
+              class="error-message"
+              id="email-error"
+              data-testid="test-contact-error-email"
+            ></div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject :</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              data-testid="test-contact-subject"
+              aria-describedby="subject-error"
+              required
+            />
+            <div
+              class="error-message"
+              id="subject-error"
+              data-testid="test-contact-error-subject"
+            ></div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message :</label>
+            <textarea
+              id="message"
+              name="message"
+              data-testid="test-contact-message"
+              aria-describedby="message-error"
+              required
+              minlength="10"
+            ></textarea>
+            <div
+              class="error-message"
+              id="message-error"
+              data-testid="test-contact-error-message"
+            ></div>
+          </div>
+
+          <button
+            type="submit"
+            class="submit-btn"
+            data-testid="test-contact-submit"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="index.js" defer></script>
+  </body>
+</html>

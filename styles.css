@@ -11,6 +11,34 @@ body {
   justify-content: center;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
+  flex-direction: column;
+}
+
+.nav-container {
+  background-color: blueviolet;
+  margin-bottom: 20px;
+  border-radius: 40rem;
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  padding-left: 0;
+  font-size: 17px;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-list-item a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+
+.nav-list-item a:hover {
+  transition: 0.9s;
+  color: white;
 }
 
 .profile-card {
@@ -138,15 +166,186 @@ h3 {
   text-align: left;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-section {
+.skills-section,
+.dislikes-section {
   justify-content: center;
   padding: 1.5rem;
   border-radius: 0.75rem;
   border: 4px solid black;
   max-width: 300px;
   width: 100%;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.about-container h2 {
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.about-container h3 {
+  color: blueviolet;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.main-container section {
+  /* margin-bottom: 2.5rem; */
+  max-width: 400px;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.section-2 ul,
+.section-3 ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.section-1 p,
+.section-2 li,
+.section-3 li,
+.section-3 p,
+.section-4 p,
+.section-5 p {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.contact-page-container {
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.contact-container {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11px;
+  padding-bottom: 20px;
+}
+
+.form-group label {
+  color: blueviolet;
+  font-weight: 500;
+}
+
+.form-group input {
+  border: 2px solid black;
+  border-radius: 8px;
+  height: 50px;
+  width: 600px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.form-group textarea {
+  border: 2px solid black;
+  border-radius: 8px;
+  height: 200px;
+  width: 600px;
+  resize: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding-left: 15px;
+  padding-top: 10px;
+  /* margin-bottom: 20px; */
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 200px;
+  white-space: normal;
+  font-family: "Montserrat", sans-serif;
+}
+
+.submit-btn:focus-visible {
+  outline: 3px solid blue;
+}
+
+.submit-btn:hover {
+  background: #333;
+  border-color: #333;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.success-message {
+  display: none; 
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 15px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+.error-message {
+  display: block;
+  color: #d32f2f;
+  font-size: 13px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+
+.error-message:empty {
+  display: none;
 }
 
 @media screen and (max-width: 875px) {
@@ -162,6 +361,10 @@ section {
 }
 
 @media screen and (max-width: 750px) {
+  .nav-container {
+    max-width: 250px;
+  }
+
   .profile-card {
     display: flex;
     flex-direction: column;
@@ -207,6 +410,26 @@ section {
   section {
     max-width: 100%;
     width: 100%;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main-container section {
+    max-width: fit-content;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding-left: 3px;
+  }
+  .form-group textarea {
+    width: 100%;
+    height: 150px;
+    padding-left: 3px;
   }
 }
 
