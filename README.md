@@ -1,4 +1,4 @@
-# My Profile Card Component
+# My Multi-page web appication
 
 A testable multi-page web appication built with HTML,CSS and vanilla JavaScript.
 
