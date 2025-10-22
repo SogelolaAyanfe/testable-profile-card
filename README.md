@@ -1,6 +1,6 @@
 # My Profile Card Component
 
-A testable profile component built with HTML,CSS and vanilla JavaScript.
+A testable multi-page web appication built with HTML,CSS and vanilla JavaScript.
 
 ## Live URL
 https://testable-profilecard.netlify.app
@@ -9,7 +9,7 @@ https://testable-profilecard.netlify.app
 https://github.com/SogelolaAyanfe/testable-profile-card
 
 ## Features
-- Responsive design on mobile, tablets and desktops.
+- Responsive Profile, About Me , and Contact-us web page design on mobile, tablets and desktops.
 - Built using vanilla HTML, CSS, JavaScript only.
 
 ##  To run this project Locally, follow the steps below:
